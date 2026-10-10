@@ -1,0 +1,15 @@
+[
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip",
+    "sha256": "70aaac0305f2d6389835ac61faf7e61897851fa6a60ce0351a50a9beea5654d2",
+    "parts": [
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part000",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part001",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part002",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part003",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part004",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part005",
+      "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part006"
+    ]
+  }
+]

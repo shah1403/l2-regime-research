@@ -1,0 +1,30 @@
+[
+  {
+    "symbol": "INFY",
+    "reference_sha256": "1ff11811e12228e502c6abba624d480df5cd0e36aa5bf26629766d96b82c154e",
+    "arrays": {
+      "bids": true,
+      "asks": true,
+      "tr_price": true,
+      "tr_qty": true,
+      "tr_side": true,
+      "tr_bookidx": true,
+      "ts": true,
+      "symbol": true
+    }
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "reference_sha256": "2e320107956024e84974be8ab3fd1f19c7496ad87526078542e19fef633f2519",
+    "arrays": {
+      "bids": true,
+      "asks": true,
+      "tr_price": true,
+      "tr_qty": true,
+      "tr_side": true,
+      "tr_bookidx": true,
+      "ts": true,
+      "symbol": true
+    }
+  }
+]

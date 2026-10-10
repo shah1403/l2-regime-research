@@ -1,0 +1,9 @@
+{
+  "url": "https://data.binance.vision/data/futures/um/daily/bookTicker/BTCUSDT/BTCUSDT-bookTicker-2023-09-01.zip",
+  "sha256": "70aaac0305f2d6389835ac61faf7e61897851fa6a60ce0351a50a9beea5654d2",
+  "raw_rows": 11711582,
+  "retained_rows": 11711582,
+  "timestamp_rule": "maximum.accumulate(event_time)",
+  "filter": "ask>bid and positive bid/ask quantities",
+  "scope": "One historical day selected from the original fixed grid; no aggregate trade tape or real fills."
+}

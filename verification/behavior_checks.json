@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Future trade maps to earlier snapshot",
+    "passed": true,
+    "detail": "150 ms trade assigned to 100 ms book by converter; trade time is discarded."
+  },
+  {
+    "name": "Validation changes when future appended",
+    "passed": true,
+    "detail": "Full-file median changes earlier valid-book decision."
+  },
+  {
+    "name": "Empty ledger miscount",
+    "passed": true,
+    "detail": "Original placeholder [0] is counted as a trade; audit uses actual exits."
+  },
+  {
+    "name": "Open mark differs from closed PnL",
+    "passed": true,
+    "detail": "Original total includes open inventory; audit distinguishes realized ledger."
+  },
+  {
+    "name": "Displayed depth not enforced",
+    "passed": true,
+    "detail": "Order size exceeds 0.01 displayed touch size; impact/partial fills absent."
+  },
+  {
+    "name": "Fixed-cost drift prefix stable",
+    "passed": true,
+    "detail": "Passed for this deterministic perturbation fixture; not a universal causality proof."
+  }
+]

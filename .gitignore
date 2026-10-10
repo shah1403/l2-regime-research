@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+/data/binance/BTCUSDT-bookTicker-2023-09-01.zip

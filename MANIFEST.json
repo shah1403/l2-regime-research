@@ -1,0 +1,562 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 81,
+    "sha256": "175890a9a8cd5ac41df7bfff533efaa88af17c588c9108468cdf5be9d0d1f114"
+  },
+  {
+    "path": ".github/workflows/import.yml",
+    "bytes": 2113,
+    "sha256": "434b78cc0d94b6641ca6f6a3da7659cc3a1934cd8c4f86d421fe5e213f6e17af"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 90,
+    "sha256": "ef4f523735f07996e9b8e7e5deb2b379555576b3de58a55cb894866489ef9616"
+  },
+  {
+    "path": "README.md",
+    "bytes": 4987,
+    "sha256": "fd1bcee303f4ab5aef73a1c683b3e63712e66b97c3ec5eed5ab13d6c0b6244cd"
+  },
+  {
+    "path": "audit.log",
+    "bytes": 183,
+    "sha256": "c008d22c91890fea5a7f5528938d9bffdae0434e91e26d4300e4bfc9b160defe"
+  },
+  {
+    "path": "audit.py",
+    "bytes": 7471,
+    "sha256": "bc092cf7dd758bff31e1fac8dc694568dfa2fa3688cefcabf07c11d412c9416d"
+  },
+  {
+    "path": "btc.log",
+    "bytes": 2413,
+    "sha256": "a57e68923c6fcc6f5391711d27aaf9ed07066f8ceda4099688fb30f1ae12a4b8"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.CHECKSUM",
+    "bytes": 100,
+    "sha256": "f49a62d4f102943cc2cf9671c20e14abe0b186d25ad3e39b8791598230bd2699"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part000",
+    "bytes": 20971520,
+    "sha256": "4e54bc73cf3e0798fab15ce5755f222af3a8ea7906b968ff74f4059f43441faf"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part001",
+    "bytes": 20971520,
+    "sha256": "8ce23a8e8b074a53af105a0eda604ed850d74c3aa249d90a63d2e1106dae8381"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part002",
+    "bytes": 20971520,
+    "sha256": "02eb8246a7636c971aa3513965bfce6c184401f8d3f4b1b0f5e258f33bb13401"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part003",
+    "bytes": 20971520,
+    "sha256": "b55de4092a27ee5017f0276ec6dae6b108382a478c1c4073278311550458cc36"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part004",
+    "bytes": 20971520,
+    "sha256": "7836cf36b5a3860522e0354409d2a3f14c2ca501fb0eb5e6be1ea0f332c030c3"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part005",
+    "bytes": 20971520,
+    "sha256": "c6541f108fc630585fa9cc1410655ebc966642ce0f2a35817201958cf6b0f911"
+  },
+  {
+    "path": "data/binance/BTCUSDT-bookTicker-2023-09-01.zip.part006",
+    "bytes": 9249726,
+    "sha256": "1d55d69771cf1e5151796f7eeee447e211cf531e7b86f060df8a9cdf7e3401fb"
+  },
+  {
+    "path": "data/binance/BTCUSDT_2023-09-01.npz",
+    "bytes": 50983816,
+    "sha256": "c6188c9f498a457fd764e0e51dee32aa09055ae8bdd98725752005c7f336e65a"
+  },
+  {
+    "path": "data/synthetic/BANKNIFTY25JUL57500PE.npz",
+    "bytes": 501965,
+    "sha256": "59e018e0284a0c75a38239be9da30e8cb66d3b9bf746a330d8145c24920e56e5"
+  },
+  {
+    "path": "data/synthetic/HDFCBANK.npz",
+    "bytes": 479066,
+    "sha256": "85a795a9d866c0a39bf797f00aa2073e145c5ebd82a624721e94a65007b0eae6"
+  },
+  {
+    "path": "data/synthetic/ICICIBANK.npz",
+    "bytes": 474668,
+    "sha256": "968ef7e986924a8b4b2b597cc3e015328c568ebe8e8447d92d4520418a6904b2"
+  },
+  {
+    "path": "data/synthetic/INFY.npz",
+    "bytes": 475294,
+    "sha256": "700131a3361f7c6e819335e4323e5c2e43a44ddf9e58bb18e89cad622c3c14e4"
+  },
+  {
+    "path": "data/synthetic/NIFTY25JUL25500CE.npz",
+    "bytes": 496588,
+    "sha256": "c942755e1f4a76c98fa162f8eac00cd45b55a2e975ea41dbef26b94f7e07e45d"
+  },
+  {
+    "path": "data/synthetic/RELIANCE.npz",
+    "bytes": 476645,
+    "sha256": "ba460d3be246841e06e8155866dcde55b5fba3f124d516cb31189cff516c45a6"
+  },
+  {
+    "path": "data/synthetic/SBIN.npz",
+    "bytes": 477139,
+    "sha256": "7ef49b7e29bc7939866be444beb98ea5d0d72a2debe50d4e486b1fda82209878"
+  },
+  {
+    "path": "data/synthetic/TATAMOTORS.npz",
+    "bytes": 487297,
+    "sha256": "7416a74a5a08bb9fe772a5c91e123b1c7e95f902c235e84255ccb7c073e34892"
+  },
+  {
+    "path": "data/synthetic/TCS.npz",
+    "bytes": 491142,
+    "sha256": "2129f37a6c4805bdabb3fc58ac392a976edb429e30499b4e07315ed6ec4a97f4"
+  },
+  {
+    "path": "docs/AUDIT.md",
+    "bytes": 4739,
+    "sha256": "ca6febd5f4f98ee08d2e6a97e97c8655e4a642c10ab3c07ed3500fe14add45e0"
+  },
+  {
+    "path": "docs/explorer.html",
+    "bytes": 2067588,
+    "sha256": "ebf3af0069d37b787b6edf0dd76c64f2cd0417e1eac570fa1cc16c561392e140"
+  },
+  {
+    "path": "docs/preview.png",
+    "bytes": 133812,
+    "sha256": "b633d91c7ca12c4dafa0f28e3e3b4fc1251616187b77051c6a1c68592e0f47b3"
+  },
+  {
+    "path": "fetch_btc.py",
+    "bytes": 1528,
+    "sha256": "47c9083678dbb84d521d2481b47f98b2d0198909e8dc4d8cb1732533f7e1d3d0"
+  },
+  {
+    "path": "goog.log",
+    "bytes": 2267,
+    "sha256": "07cb83252407c38e06b2f2581f86a918e2e188a8b5278404d037a9226cd12f2e"
+  },
+  {
+    "path": "large_files.json",
+    "bytes": 623,
+    "sha256": "1190bc51cb53d2a07f21776bad6e588cebb7a5e1d7462c49afa7fecefccc88cd"
+  },
+  {
+    "path": "original_upload.zip",
+    "bytes": 120385,
+    "sha256": "a4b554719f3617f8186f505895af5d36989c4a67bc2ce8ff9e840c5268474c6e"
+  },
+  {
+    "path": "requirements-verified.txt",
+    "bytes": 60,
+    "sha256": "d0066322d3ef6a963dfc3d2534ab36e16274c51b251f0aa9d5e6e4cdfab4504c"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 30,
+    "sha256": "5462a6315c3e006295f3b37a7412e15b75b20fcc928be8a39c410210ce36a3d6"
+  },
+  {
+    "path": "restore_large_files.py",
+    "bytes": 485,
+    "sha256": "b9f967579e24089c7922dcd710c7e8a6e2ac8e8f49dff0fe40410d747a2ca1f0"
+  },
+  {
+    "path": "source/data_pipeline/binance_l2_fetch.py",
+    "bytes": 5792,
+    "sha256": "3025cfea53fef09502b05ba050fc3785bcaae5058e1f03a8b13bd0f9824471b4"
+  },
+  {
+    "path": "source/data_pipeline/databento_full.py",
+    "bytes": 2247,
+    "sha256": "dfe051f1d73fbab17fba35cdf447b71d497af8a621d218f927d1b9d8ef480812"
+  },
+  {
+    "path": "source/data_pipeline/databento_mbp.py",
+    "bytes": 5157,
+    "sha256": "e0ad4bd9df338a6676347d17285502559699b0bd5391b126254bde45730305d7"
+  },
+  {
+    "path": "source/data_pipeline/databento_month.py",
+    "bytes": 3221,
+    "sha256": "deb96ac94f4fdfde034a22cd4cc314293e54816a71b8f63c3ee2b48cdf4208f1"
+  },
+  {
+    "path": "source/strategies/_lib/goog_minute_regime.py",
+    "bytes": 9660,
+    "sha256": "3d0a4a1267af2d12c5b190850565d63e0d3c0010b759bfbc97be3a7a77120165"
+  },
+  {
+    "path": "source/strategies/_lib/l2_diagnose.py",
+    "bytes": 6577,
+    "sha256": "b24e08f50de76c6c16dc9f2407e35dab585b41280152dc2ff9b0af5e79f2a7b9"
+  },
+  {
+    "path": "source/strategies/_lib/l2_hmm.py",
+    "bytes": 5608,
+    "sha256": "facf0201329981d2fb8b5e400f26943cdd5a913019dca5129cea154eab7084f2"
+  },
+  {
+    "path": "source/strategies/_lib/l2_mmdir.py",
+    "bytes": 8811,
+    "sha256": "ae3bea2358b5b0bea07813b60f4ae7dc001e225ec062cbf1c2df134f3fc1e532"
+  },
+  {
+    "path": "source/strategies/_lib/l2_strategy.py",
+    "bytes": 9427,
+    "sha256": "b14ba32e616273bb5cf3bc8299c2e1b1a09fe2cec1899a2c1a4b09ca565b5935"
+  },
+  {
+    "path": "source/strategies/adaptive_wh/adaptive_wh_long.py",
+    "bytes": 9422,
+    "sha256": "90c9a73dd10da6a4eed9b284b4ec31fa555bb1dcfbaeab3be3f88502777a1b23"
+  },
+  {
+    "path": "source/strategies/adaptive_wh/goog_adaptive_wh.py",
+    "bytes": 8585,
+    "sha256": "cd7d9e177ce2950ff893e42e7a483434a276c7ceafd66084c22c26ef954e7e8d"
+  },
+  {
+    "path": "source/strategies/market_making/goog_scale_test.py",
+    "bytes": 7483,
+    "sha256": "cc56820507062b71f7e18c2c1ae8dcb02c9c56af8f82522ef36241f10704bc56"
+  },
+  {
+    "path": "source/strategies/market_making/l2_alpha_horizon.py",
+    "bytes": 4621,
+    "sha256": "6063f71e295868ef7055f1e08ea921fc1e00a0696766df1cc96d9d6ccc74030a"
+  },
+  {
+    "path": "source/strategies/market_making/l2_dashboard.py",
+    "bytes": 21535,
+    "sha256": "4a2b3db12aa75c087e27a3e76e1218f6d272dc2329ba681c09f9575e75afa337"
+  },
+  {
+    "path": "source/strategies/market_making/l2_deepdiag.py",
+    "bytes": 10911,
+    "sha256": "99f44bbf82510be8b02ac08b735d629f00cf12f3bcc042778eeb4dbf87c711bc"
+  },
+  {
+    "path": "source/strategies/market_making/l2_fast_strategy.py",
+    "bytes": 7371,
+    "sha256": "c3ec30db2a7a2953582c62bb5085becb7e747f523c3b8a3f14c15f50c2897001"
+  },
+  {
+    "path": "source/strategies/market_making/l2_regime_compare.py",
+    "bytes": 3031,
+    "sha256": "916b798074cafb83bb6e3b8a5f12751b35f28085fe9de0bf6d1cae94fc4e35aa"
+  },
+  {
+    "path": "source/strategies/market_making/l2_walkforward.py",
+    "bytes": 5236,
+    "sha256": "11c13b6b5c982a4cc3ab568a184117541970ae89ca438260fd43407d99ba29b1"
+  },
+  {
+    "path": "source/strategies/market_making/nse_l2_backtest.py",
+    "bytes": 7433,
+    "sha256": "accc7b85d2ae2b67668b920e082a1f512895ea656a47c0c044c19a7aca87dd6d"
+  },
+  {
+    "path": "source/strategies/market_making/nse_l2_sim.py",
+    "bytes": 8826,
+    "sha256": "7ba858dcf07b75ba0f06fa4387530c46a8faf68a882ede55527c2dc1aa4c9849"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/assembler.py",
+    "bytes": 11386,
+    "sha256": "1444563bfee87eb957c12d51c88b166f74c0f774840be4d28f0556900d5c1eed"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/backtest.py",
+    "bytes": 3794,
+    "sha256": "75019f6cfb3285ff4af59e8a4178456741af8005e7ec7ce7786e21b98ba04f16"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/conditional_return_dist.py",
+    "bytes": 10638,
+    "sha256": "5e89a79f8e8615b19187092c9f00cbb83003b1fb4415f4ccc5a2bcacdf6eb876"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/flow.py",
+    "bytes": 2150,
+    "sha256": "a6d8ca2675df262fa0cee0ef460bfd7dadd3fc16c7602ce00569770fda595766"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/kinematics.py",
+    "bytes": 4614,
+    "sha256": "f1bfbabe5474afa7d58f5e52bb900881e9c1b8fbf091b0011da49d0f9429dd26"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/maker.py",
+    "bytes": 1861,
+    "sha256": "ab38ae23e6f81ccd6c10eaced1ac14fe72715f95ea60c23bcc3636c338ae3767"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/maker_backtest.py",
+    "bytes": 3919,
+    "sha256": "9bad9961a1e47a885008a44e10e8857486bd7ca05e6e5e5ab9a5f67e189d9198"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase0_regression_check.py",
+    "bytes": 6130,
+    "sha256": "0f69d5db5af4e2ce951ea007c058df403aef6824d471fcd26c3b5a5a40fa3f9f"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase1_signal_smoke.py",
+    "bytes": 3256,
+    "sha256": "96444d01729af9c7e4134020dee5731f3b2e9af9446c03819e0a79933ba64070"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase2_forward_informativeness.py",
+    "bytes": 7412,
+    "sha256": "1ca19e73c478a8ae441948ddc23d49d243b6e9f83ef130dc4f14f2a3ce073944"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase2_hmm_regression.py",
+    "bytes": 2131,
+    "sha256": "09a00452b492fd79166818ad9a5f9688bf7155467fcd251977049003c30ab090"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase3_flow_momentum_check.py",
+    "bytes": 1740,
+    "sha256": "6d1e4887b813d2037279422aa5286042f546b3f9d988e78c9ff380ab14a4e7d0"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase3_kinematic_modifier_test.py",
+    "bytes": 2864,
+    "sha256": "6a9e6ceeebbd12f7c16b85bdfbda8c7b46225ca793fb3fcf1cf3e3f132577e29"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase4_assembler_e2e.py",
+    "bytes": 5847,
+    "sha256": "8f74b1f5d9dbd724a7498a4a611e627387f55a8f9bfc4e6d0a27364a69f8200a"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase5_cross_asset.py",
+    "bytes": 6644,
+    "sha256": "b04c72fa7169297f7227a1baeb2ce67ae6ab415b2d4252bfbe5592ac7e52a258"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase5b_maker_cross_asset.py",
+    "bytes": 2608,
+    "sha256": "e2b2dbbe607393d596302bce9a923234d32666d7e66eb535022714803c5887b8"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/phase5b_maker_regression.py",
+    "bytes": 2022,
+    "sha256": "9e742856ef83a4b5dcf52617a8f14eb7a15bcf276a0bd88e0289daa3d4f5ff92"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/probe_volume_bucket_flow.py",
+    "bytes": 5754,
+    "sha256": "8804c78355bf4aa807cbd591d3b2f33a7ea5ca087b01e0c86aa33365d8488a8d"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/regime.py",
+    "bytes": 7443,
+    "sha256": "fc7e41744cf3e2e4b7c5aa552629f254cb587d01bc18256e927cf97274d14c6b"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/signals.py",
+    "bytes": 5054,
+    "sha256": "94354807a333b9f340c34777bdb222d53029bf33763ffe0e99092e4250d0060e"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/thresholds.py",
+    "bytes": 1148,
+    "sha256": "c7d2294a9d9f36ab262de6b5b94c5fc21230cddeec826438303f685ff7a11670"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/tick_momentum_strategy.py",
+    "bytes": 3756,
+    "sha256": "ce8c1fc5a08f359cecfb985704493422184f6a7ad6f9baf608ebaf3e97e2977d"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/tools.py",
+    "bytes": 4162,
+    "sha256": "beaa15df08b84c5f1982887bff8a0e8e389f5f80937b36ecd29c972232a97879"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/tradebar_kinematic_diag.py",
+    "bytes": 11082,
+    "sha256": "99f88c708adbb8a2af6d9400f9331eefe16016ccec676fe1184a628b59b10852"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/tradebars.py",
+    "bytes": 2066,
+    "sha256": "116ac09a6a39edacbd1695d0d411140803e4f8ef4fd56048aedabd151b4ff696"
+  },
+  {
+    "path": "source/strategies/regime_lab_toolkit/volbucket_backtest.py",
+    "bytes": 8518,
+    "sha256": "445d6fac06f055b9a37baf296ef9074c22d332826acda9b663a5f2f50f1cf0a5"
+  },
+  {
+    "path": "verification/BTCUSDT_2023-09-01_250ms_ledger.csv",
+    "bytes": 2042080,
+    "sha256": "9ed733de8b2243e5ce25acfb5f2359c91b04e713e54fa631b7c4ccc374fbd79c"
+  },
+  {
+    "path": "verification/BTCUSDT_2023-09-01_next_ledger.csv",
+    "bytes": 2170541,
+    "sha256": "f38031c7e8ae2abd5cda2167d0d92f55c18800df056da83a065dae6e564dfa97"
+  },
+  {
+    "path": "verification/BTCUSDT_2023-09-01_summary.json",
+    "bytes": 2301,
+    "sha256": "1cda0e0be1a8dd2b94dff708cd9088c36d9220213b3fac7ba964e20b4fbea2a8"
+  },
+  {
+    "path": "verification/GOOG_2026-07-10_250ms_ledger.csv",
+    "bytes": 14416,
+    "sha256": "dc2cfb8a1f36f931812241dd1085bc9796c8ee053a828ac20689d51f340e1114"
+  },
+  {
+    "path": "verification/GOOG_2026-07-10_next_ledger.csv",
+    "bytes": 14575,
+    "sha256": "31c3a2b71b8cb188a321d2a6cd0b5b6f25e9fb515ba03966cc926efe2ac90429"
+  },
+  {
+    "path": "verification/GOOG_2026-07-10_summary.json",
+    "bytes": 2266,
+    "sha256": "a6c6a72a1c9b7ef63c88017a0a69c2351aa0992e6f610470c9497ccf2be37e28"
+  },
+  {
+    "path": "verification/behavior_checks.json",
+    "bytes": 996,
+    "sha256": "8f8577d4b76a2f348cb68b69f490f52e70db44db6e579cb8c3cb6c48e45f56b4"
+  },
+  {
+    "path": "verification/btc_provenance.json",
+    "bytes": 470,
+    "sha256": "75356d5ff87fc14f752121e422836b92abd3ea34254659e8583cce2e57b8988a"
+  },
+  {
+    "path": "verification/source_manifest.json",
+    "bytes": 7053,
+    "sha256": "0cc1f7d13751d38bc30e595f48bb4330124a135d091ffddaffc03c14480702ed"
+  },
+  {
+    "path": "verification/synthetic_BANKNIFTY25JUL57500PE_fee0.csv",
+    "bytes": 9370,
+    "sha256": "ed1e91d95815d69b896cfafbdcebf10af61e6838e4a38753d3fef42cc5943996"
+  },
+  {
+    "path": "verification/synthetic_BANKNIFTY25JUL57500PE_fee2.5.csv",
+    "bytes": 10268,
+    "sha256": "fecdedd5cedfd26e7a0dc916699ee665212c15327ea939edfb0fcd549b4f19ff"
+  },
+  {
+    "path": "verification/synthetic_HDFCBANK_fee0.csv",
+    "bytes": 15457,
+    "sha256": "1b18d1ba14edaeff0ac29178e5bfdea2add744f8c6eef1e217f379bbb4971e98"
+  },
+  {
+    "path": "verification/synthetic_HDFCBANK_fee2.5.csv",
+    "bytes": 17255,
+    "sha256": "dbf1efd426fa909fc14f4b68b0020141afe034bd1937fce8446d9d08d870d03c"
+  },
+  {
+    "path": "verification/synthetic_ICICIBANK_fee0.csv",
+    "bytes": 15951,
+    "sha256": "7feabf9e14deef94256dbfe6084b0d3a093aadf637bd4a03336151b7479cc93c"
+  },
+  {
+    "path": "verification/synthetic_ICICIBANK_fee2.5.csv",
+    "bytes": 17632,
+    "sha256": "85efe625ba68650fd9fc81d979068bce0a22cc626434798f3bb203a1149ad19e"
+  },
+  {
+    "path": "verification/synthetic_INFY_fee0.csv",
+    "bytes": 13507,
+    "sha256": "6a29710213d96b7627fe5f927c1fd1921facf237fcfb7038b729aa996f7f8602"
+  },
+  {
+    "path": "verification/synthetic_INFY_fee2.5.csv",
+    "bytes": 15100,
+    "sha256": "eb7c5d127c5e0b0af85c45724ee269f076a66a5dc20f38659899364152a07867"
+  },
+  {
+    "path": "verification/synthetic_NIFTY25JUL25500CE_fee0.csv",
+    "bytes": 14396,
+    "sha256": "e9ff13f10d1193f07517962b35dcca1e4ed4d23220cb6f9d8328eba5e2754ce4"
+  },
+  {
+    "path": "verification/synthetic_NIFTY25JUL25500CE_fee2.5.csv",
+    "bytes": 15807,
+    "sha256": "9091f711b13d4b8cb2e110d4ca25ff0b000307010bc17f6eb805ee1443949896"
+  },
+  {
+    "path": "verification/synthetic_RELIANCE_fee0.csv",
+    "bytes": 14983,
+    "sha256": "30653e527bfd69c3015b31532163899ce75b61907baebf2ad5246ad2ecc2206a"
+  },
+  {
+    "path": "verification/synthetic_RELIANCE_fee2.5.csv",
+    "bytes": 16591,
+    "sha256": "9baf8fa9f67e13447d56dfeac6449be47f6e7efcafc0f66142024b091c25ef75"
+  },
+  {
+    "path": "verification/synthetic_SBIN_fee0.csv",
+    "bytes": 8875,
+    "sha256": "f5c3e35f3edaa19ac50d01baa4492076772517d9f8116999ce3a614fc3619d2e"
+  },
+  {
+    "path": "verification/synthetic_SBIN_fee2.5.csv",
+    "bytes": 9872,
+    "sha256": "390903c27fcfa7267c6ee149635f13da7ba33ced2a28d29497f897e90c63ec3e"
+  },
+  {
+    "path": "verification/synthetic_TATAMOTORS_fee0.csv",
+    "bytes": 10998,
+    "sha256": "c1def4791060b7f4128593f0b81760bdc3b38b8532bc6af431db61bab191d2c2"
+  },
+  {
+    "path": "verification/synthetic_TATAMOTORS_fee2.5.csv",
+    "bytes": 12099,
+    "sha256": "78ddb3f2ff7c1296328d19f6b17b268b5868743d483fa9f2bff1c323889abd50"
+  },
+  {
+    "path": "verification/synthetic_TCS_fee0.csv",
+    "bytes": 9755,
+    "sha256": "3ac3e4f6a8a7591a749f9893ca2d78662bfe1e4eb680d69ab13882a861514d4e"
+  },
+  {
+    "path": "verification/synthetic_TCS_fee2.5.csv",
+    "bytes": 10834,
+    "sha256": "12670ca9c84bf1107625762db046dfa1c49fdabf074581e3afb89a737895bc12"
+  },
+  {
+    "path": "verification/synthetic_provenance.json",
+    "bytes": 646,
+    "sha256": "127412a9ce1cf25b88088355eca0cab3e338ed65707151161c9770fb5e4fc28a"
+  },
+  {
+    "path": "verification/synthetic_summary.json",
+    "bytes": 6555,
+    "sha256": "1bdf021a53c4803d374bb3f2c85ffc9c277c2ccc92c228efd4b1618dd123986f"
+  },
+  {
+    "path": "verification/zip_fidelity.json",
+    "bytes": 4374,
+    "sha256": "8d04642b3464fdd4c9635bbf6fd7dd15192194aff18b8e2826953657e565939c"
+  }
+]

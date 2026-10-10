@@ -1,0 +1,190 @@
+[
+  {
+    "path": "data_pipeline/binance_l2_fetch.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "data_pipeline/databento_full.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "data_pipeline/databento_mbp.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "data_pipeline/databento_month.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/_lib/goog_minute_regime.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/_lib/l2_diagnose.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/_lib/l2_hmm.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/_lib/l2_mmdir.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/_lib/l2_strategy.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/goog_scale_test.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_alpha_horizon.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_dashboard.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_deepdiag.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_fast_strategy.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_regime_compare.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/l2_walkforward.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/nse_l2_backtest.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/market_making/nse_l2_sim.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/assembler.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/backtest.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/conditional_return_dist.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/flow.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/kinematics.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/maker.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/maker_backtest.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase0_regression_check.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase1_signal_smoke.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase2_forward_informativeness.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase2_hmm_regression.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase3_flow_momentum_check.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase3_kinematic_modifier_test.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase4_assembler_e2e.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase5b_maker_cross_asset.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase5b_maker_regression.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/phase5_cross_asset.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/probe_volume_bucket_flow.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/regime.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/signals.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/thresholds.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/tick_momentum_strategy.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/tools.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/tradebars.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/tradebar_kinematic_diag.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/volbucket_backtest.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/regime_lab_toolkit/__init__.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/adaptive_wh/adaptive_wh_long.py",
+    "exact_bytes": true
+  },
+  {
+    "path": "strategies/adaptive_wh/goog_adaptive_wh.py",
+    "exact_bytes": true
+  }
+]
