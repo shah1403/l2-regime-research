@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4987,
-    "sha256": "fd1bcee303f4ab5aef73a1c683b3e63712e66b97c3ec5eed5ab13d6c0b6244cd"
+    "bytes": 3522,
+    "sha256": "15113c376b79680b4b3d3477728059f535d78f7d04e8a8d03f6ef8cdd7f84fc5"
   },
   {
     "path": "audit.log",
@@ -126,18 +126,18 @@
   },
   {
     "path": "docs/AUDIT.md",
-    "bytes": 4739,
-    "sha256": "ca6febd5f4f98ee08d2e6a97e97c8655e4a642c10ab3c07ed3500fe14add45e0"
+    "bytes": 4506,
+    "sha256": "20a43e5236ed8c8f589cfbca0c2514e1ef99e8ff8346ca5ce75778d335147b07"
   },
   {
     "path": "docs/explorer.html",
-    "bytes": 2067588,
-    "sha256": "ebf3af0069d37b787b6edf0dd76c64f2cd0417e1eac570fa1cc16c561392e140"
+    "bytes": 1948569,
+    "sha256": "ed285d4b70ef6cdea130b6a56d1429a4973bd234f353edbb956b0a7f683cfd49"
   },
   {
     "path": "docs/preview.png",
-    "bytes": 133812,
-    "sha256": "b633d91c7ca12c4dafa0f28e3e3b4fc1251616187b77051c6a1c68592e0f47b3"
+    "bytes": 74864,
+    "sha256": "8f2f618fe60dcdd58fa45363d4d4c13d2cf3810b2d9f352f253c2ee132998f7f"
   },
   {
     "path": "fetch_btc.py",

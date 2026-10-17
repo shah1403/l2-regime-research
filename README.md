@@ -2,6 +2,9 @@
 
 Research into how order-book states predict short-horizon price direction, and how that information interacts with entry timing, spreads and fees.
 
+
+![Research overview](docs/preview.png)
+
 ## Research highlights
 
 - **81.96% directional hit rate** across **12,143 closed trades** on BTCUSDT (1 September 2023), using next-update entries and a fixed one-second hold.
@@ -52,3 +55,4 @@ python audit.py --replay ../first-passage-research/data/goog/goog_2026-07-10.npz
 - docs/explorer.html: project visualization.
 
 Run python restore_large_files.py to reconstruct large inputs from checksum-verified byte parts listed in large_files.json. Original source and third-party attribution are retained; no new license is imposed.
+
