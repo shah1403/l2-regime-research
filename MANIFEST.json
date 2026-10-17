@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 3522,
-    "sha256": "15113c376b79680b4b3d3477728059f535d78f7d04e8a8d03f6ef8cdd7f84fc5"
+    "bytes": 2845,
+    "sha256": "ec5dee677b1e75c17d5b507187f71be9658126b5e459b946d8a4c3e537a608f0"
   },
   {
     "path": "audit.log",
@@ -131,13 +131,18 @@
   },
   {
     "path": "docs/explorer.html",
-    "bytes": 1948569,
-    "sha256": "ed285d4b70ef6cdea130b6a56d1429a4973bd234f353edbb956b0a7f683cfd49"
+    "bytes": 6743,
+    "sha256": "e30740afe61c058d356a4a2eeab7dd47767c95a2254c7dda3783bc204520db12"
   },
   {
     "path": "docs/preview.png",
-    "bytes": 74864,
-    "sha256": "8f2f618fe60dcdd58fa45363d4d4c13d2cf3810b2d9f352f253c2ee132998f7f"
+    "bytes": 64404,
+    "sha256": "289defbd87e3555e342764f88fa14d9c35b0e3bcb1089aa7ee9ed1a4f38462f2"
+  },
+  {
+    "path": "docs/technical-explorer.html",
+    "bytes": 2066668,
+    "sha256": "0069a8dea46877f321cfa75b342a2d097892af6bec02c70326c22f4b281a5eb9"
   },
   {
     "path": "fetch_btc.py",

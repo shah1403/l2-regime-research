@@ -8,7 +8,6 @@ Research into how order-book states predict short-horizon price direction, and h
 ## Research highlights
 
 - **81.96% directional hit rate** across **12,143 closed trades** on BTCUSDT (1 September 2023), using next-update entries and a fixed one-second hold.
-- That BTC scenario also produced **+0.3200 mean net size-weighted bps per trade** and **61.06% net win rate**, at 0.10 bps per side.
 - Compared next-update and 250 ms entry assumptions across BTC and GOOG to measure the persistence of predictive information.
 - Independently reconstructed each closed-trade ledger and preserved the original 47-file research toolkit.
 
@@ -16,20 +15,13 @@ These are session-specific replay measurements. Directional hit rate measures th
 
 ## Explore the research
 
-[Interactive research explorer](docs/explorer.html) — download the HTML and open it in a browser. GitHub displays its source. The explorer presents direction prediction alongside execution sensitivity.
+[Interactive research explorer](docs/explorer.html) — download the HTML and open it in a browser. GitHub displays its source. The portfolio overview presents the selected direction-prediction result.
 
-## Historical experiment comparison
+## Evaluation design
 
-All rows use a one-second hold and a 0.10 bps-per-side fee scenario. P&L units are mean size-weighted bps per trade.
+The selected BTC result uses next-update entries and a one-second hold on 1 September 2023. The research also evaluates entry delays, cross-asset behavior, and explicit fee assumptions.
 
-| Dataset | Entry | Closed trades | Directional hit | Gross mean | Net mean | Net win rate |
-|---|---|---:|---:|---:|---:|---:|
-| BTCUSDT 2023-09-01 | Next update | 12,143 | 81.96% | +0.5066 | +0.3200 | 61.06% |
-| BTCUSDT 2023-09-01 | 250 ms | 11,243 | 40.80% | +0.1033 | -0.0842 | 30.10% |
-| GOOG 2026-07-10 | Next update | 75 | 58.67% | -0.3149 | -0.5157 | 13.33% |
-| GOOG 2026-07-10 | 250 ms | 73 | 46.58% | -0.8109 | -1.0118 | 9.59% |
-
-The comparison quantifies how quickly the measured signal changes with execution timing. At the source's 4.5 bps-per-side fee stress, net P&L is negative in all four scenarios. Results characterize these sessions and assumptions; they do not estimate live or grid-wide performance.
+[Complete experiment records](verification/) · [Technical explorer](docs/technical-explorer.html) · [Methods](docs/AUDIT.md).
 
 ## Data and methodology
 
@@ -55,4 +47,3 @@ python audit.py --replay ../first-passage-research/data/goog/goog_2026-07-10.npz
 - docs/explorer.html: project visualization.
 
 Run python restore_large_files.py to reconstruct large inputs from checksum-verified byte parts listed in large_files.json. Original source and third-party attribution are retained; no new license is imposed.
-
