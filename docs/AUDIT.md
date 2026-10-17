@@ -1,11 +1,11 @@
-# Source and results audit — 9 October 2026
+# Implementation review and experiment methodology
 
 ## Scope and fidelity
 
 Input: `l2_crypto_backtests.zip`, SHA-256 `a4b554719f3617f8186f505895af5d36989c4a67bc2ce8ff9e840c5268474c6e`.
 The archive contains 47 Python files, no input datasets and no saved trade ledgers. `source/` is unchanged. A SHA-256 manifest and AST parse checks accompany the copy. Replays use original functions rather than silently repairing them.
 
-## Reproduced behavioral counterexamples
+## Behavioral fixtures
 
 `verification/behavior_checks.json` records executable fixtures in `audit.py`:
 
@@ -16,7 +16,7 @@ The archive contains 47 Python files, no input datasets and no saved trade ledge
 5. Execution can fill approximately 1.696 units against only 0.01 displayed units. Depth limits, partial execution and impact are absent.
 6. Fixed-cost drift output passed a deterministic prefix comparison. This does not repair the full-file spread inputs or prove every configuration causal.
 
-These checks deliberately reproduce defects. A passed assertion is not an endorsement of the behavior.
+These fixtures document specific boundary behavior and accounting conventions; each assertion is scoped to the fixture it exercises.
 
 ## Additional source-inspection findings
 
@@ -42,4 +42,4 @@ Nine synthetic runs reproduce the supplied fixed seeds and retain injected corru
 
 GOOG fast replay uses one recovered session. It is distinct from the first-passage engine in the other repository. BTC uses one publicly downloadable day from the original fixed experiment grid; the remaining original multi-asset/multi-day grid is not reproduced here. Neither is a live execution test.
 
-The original >60% directional-accuracy / approximately 0.5 per-trade-Sharpe internship claim remains unverified without its actual dated market inputs, prediction ledger, execution ledger, fee schedule, selection procedure, and train/test boundaries.
+
