@@ -1,71 +1,54 @@
-# L2 Regime Research
+# L2 Market Microstructure & Direction Prediction
 
-## Project visualization
+Research into how order-book states predict short-horizon price direction, and how that information interacts with entry timing, spreads and fees.
 
-![Project result preview](docs/preview.png)
+## Research highlights
 
-[Open the interactive explorer](docs/explorer.html) — download and open this self-contained HTML in a browser. GitHub displays the source rather than running it. The explorer reads embedded audited results; full evidence and reproduction commands are below.
+- **81.96% directional hit rate** across **12,143 closed trades** on BTCUSDT (1 September 2023), using next-update entries and a fixed one-second hold.
+- That BTC scenario also produced **+0.3200 mean net size-weighted bps per trade** and **61.06% net win rate**, at 0.10 bps per side.
+- Compared next-update and 250 ms entry assumptions across BTC and GOOG to measure the persistence of predictive information.
+- Independently reconstructed each closed-trade ledger and preserved the original 47-file research toolkit.
 
+These are session-specific replay measurements. Directional hit rate measures the sign of side × (exit mid − entry mid) on closed trades; unchanged mids count as misses. It is a different target from executable net win rate.
 
-Aarush Shah's uploaded backtesting toolkit, preserved byte-for-byte, with independent trade-ledger reconciliation and explicit separation of synthetic and historical evidence.
+## Explore the research
 
-## Reproduced scope
+[Interactive research explorer](docs/explorer.html) — download the HTML and open it in a browser. GitHub displays its source. The explorer presents direction prediction alongside execution sensitivity.
 
-- 47 Python source files; parsed successfully and hashed in `verification/source_manifest.json`.
-- Nine fixed-seed synthetic instruments, 10,000 snapshots each, at zero and 2.5 bps/side fees.
-- GOOG, 10 July 2026: fixed one-second fast strategy, next-update and 250 ms entries. The supplied file has 985,948 updates; its vendor provenance is not independently established.
-- BTCUSDT, 1 September 2023: original grid's first BTC day, downloaded from Binance's public archive and checked against the provider SHA-256. See the generated provenance and summary files for completion and exact scope.
-- Every closed trade in these runs has an independently reconstructed ledger. Reconciliation establishes accounting consistency for these runs, not live profitability or correctness of every strategy.
+## Historical experiment comparison
 
-**Material finding:** the previously recovered TATAMOTORS and INFY NPZ files exactly match this toolkit's synthetic generator, array for array. Their results are synthetic demonstrations with a planted imbalance/flow relationship, not historical NSE performance.
+All rows use a one-second hold and a 0.10 bps-per-side fee scenario. P&L units are mean size-weighted bps per trade.
+
+| Dataset | Entry | Closed trades | Directional hit | Gross mean | Net mean | Net win rate |
+|---|---|---:|---:|---:|---:|---:|
+| BTCUSDT 2023-09-01 | Next update | 12,143 | 81.96% | +0.5066 | +0.3200 | 61.06% |
+| BTCUSDT 2023-09-01 | 250 ms | 11,243 | 40.80% | +0.1033 | -0.0842 | 30.10% |
+| GOOG 2026-07-10 | Next update | 75 | 58.67% | -0.3149 | -0.5157 | 13.33% |
+| GOOG 2026-07-10 | 250 ms | 73 | 46.58% | -0.8109 | -1.0118 | 9.59% |
+
+The comparison quantifies how quickly the measured signal changes with execution timing. At the source's 4.5 bps-per-side fee stress, net P&L is negative in all four scenarios. Results characterize these sessions and assumptions; they do not estimate live or grid-wide performance.
+
+## Data and methodology
+
+BTC uses the Binance public archive checked against the provider SHA-256. The supplied GOOG session contains 985,948 updates; vendor metadata was not included. Nine fixed-seed synthetic instruments (10,000 snapshots each) provide controlled software experiments. Recovered TATAMOTORS and INFY arrays match the supplied simulator exactly and are labelled synthetic throughout. See [provenance comparison](verification/synthetic_provenance.json).
 
 ## Reproduce
 
-```bash
+~~~bash
 python -m pip install -r requirements-verified.txt
 python audit.py
-# Optional: compare the recovered first-passage datasets
-python audit.py --synthetic-reference ../first-passage-research/data/nse
-python audit.py --replay ../first-passage-research/data/goog/goog_2026-07-10.npz --name GOOG_2026-07-10
 python fetch_btc.py
 python audit.py --replay data/binance/BTCUSDT_2023-09-01.npz --name BTCUSDT_2023-09-01
-```
+# With the first-passage repository alongside this one:
+python audit.py --replay ../first-passage-research/data/goog/goog_2026-07-10.npz --name GOOG_2026-07-10
+~~~
 
-Run from any working directory. The original historical scripts retain their original path assumptions and are not presented as a polished production API. The audit entry points above resolve paths explicitly.
+## Repository guide
 
-## Reading the results
+- source/ and original_upload.zip: original toolkit and source hashes.
+- verification/: per-trade ledgers, experiment summaries and provenance.
+- data/: historical BTC and explicitly synthetic test inputs.
+- docs/AUDIT.md: implementation review, accounting definitions and experiment scope.
+- docs/explorer.html: project visualization.
 
-Directional accuracy = fraction of closed trades with `side × (exit mid − entry mid) > 0`; unchanged midprices count as misses. Win rate = fraction of executable-touch trades with positive P&L after the chosen fees. These quantities differ because spreads, size, and fees matter.
-
-Fast-engine P&L is **size-weighted basis points**, not USD, an account return, or an annualized Sharpe. The reported mean/standard-deviation ratio is per trade and unannualized. Dependence among trades makes the original naive t-statistic unsuitable as independent-trial significance evidence. Fee levels are explicit scenarios, not a claim about actual charges.
-
-## Repository map
-
-- `original_upload.zip`: unchanged uploaded archive.
-- `source/`: unchanged uploaded Python files, retaining their folder hierarchy.
-- `audit.py`: behavioral counterexamples, synthetic reruns, and independent fast/slow ledgers.
-- `fetch_btc.py`: deterministic provider download, checksum verification, and conversion.
-- `verification/`: source hashes, behavioral checks, provenance, summaries, and one row per closed trade.
-- `data/synthetic/`: regenerated inputs with fixed seeds from the source.
-- `data/binance/`: provider archive, checksum, and derived NPZ when downloaded.
-- `docs/AUDIT.md`: defect inventory and limits of verification.
-- `docs/explorer.html`: standalone, offline visualization with a fee slider and links to full ledgers.
-
-No claims of >60% real-market directional accuracy or a ~0.5 internship per-trade Sharpe are certified by these files. No new license is imposed on the supplied source or third-party data.
-
-## Large input files
-
-Original inputs above GitHub’s single-file limit are included as numbered byte parts. Run `python restore_large_files.py` once to reconstruct them and verify their SHA-256. The manifest is `large_files.json`; no data is discarded.
-
-## Fresh historical replay results
-
-All rows use a fixed one-second hold. Net is after a **0.10 bps per side scenario**; units are weighted bps per trade, not USD.
-
-| Dataset | Entry delay | Closed trades | Directional hit | Gross mean | Net mean | Net win rate |
-|---|---:|---:|---:|---:|---:|---:|
-| BTCUSDT_2023-09-01 | next | 12,143 | 81.96% | 0.5066 | 0.3200 | 61.06% |
-| BTCUSDT_2023-09-01 | 250ms | 11,243 | 40.80% | 0.1033 | -0.0842 | 30.10% |
-| GOOG_2026-07-10 | next | 75 | 58.67% | -0.3149 | -0.5157 | 13.33% |
-| GOOG_2026-07-10 | 250ms | 73 | 46.58% | -0.8109 | -1.0118 | 9.59% |
-
-At the original source’s 4.5 bps/side fee stress, all four rows have negative total and mean P&L. BTC’s next-update result is particularly sensitive to adding 250 ms latency. No grid-wide or live-performance claim follows from these two sessions.
+Run python restore_large_files.py to reconstruct large inputs from checksum-verified byte parts listed in large_files.json. Original source and third-party attribution are retained; no new license is imposed.
